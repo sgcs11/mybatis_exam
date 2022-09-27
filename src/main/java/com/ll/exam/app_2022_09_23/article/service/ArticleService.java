@@ -16,7 +16,17 @@ public class ArticleService {
         return articleRepository.getArticles();
     }
 
-    public void write(String subject, String content) {
+    public long write(String subject, String content) {
         articleRepository.write(subject, content);
+
+        return articleRepository.getLastInserId();
+    }
+
+    public Article getArticleById(long id) {
+        return articleRepository.getArticleById(id);
+    }
+
+    public List<Article> search(String kwType, String kw) {
+        return articleRepository.search(kwType, kw);
     }
 }
