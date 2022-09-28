@@ -1,7 +1,7 @@
-package com.ll.exam.app_2022_09_23.article.service;
+package com.ll.exam.app_2022_09_23.app.article.service;
 
-import com.ll.exam.app_2022_09_23.article.dto.Article;
-import com.ll.exam.app_2022_09_23.article.repository.ArticleRepository;
+import com.ll.exam.app_2022_09_23.app.article.dto.Article;
+import com.ll.exam.app_2022_09_23.app.article.repository.ArticleRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -19,7 +19,7 @@ public class ArticleService {
     public long write(String subject, String content) {
         articleRepository.write(subject, content);
 
-        return articleRepository.getLastInserId();
+        return articleRepository.getLastInsertId();
     }
 
     public Article getArticleById(long id) {

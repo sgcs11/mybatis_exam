@@ -1,7 +1,8 @@
 package com.ll.exam.app_2022_09_23;
 
-import com.ll.exam.app_2022_09_23.article.dto.Article;
-import com.ll.exam.app_2022_09_23.article.service.ArticleService;
+
+import com.ll.exam.app_2022_09_23.app.article.dto.Article;
+import com.ll.exam.app_2022_09_23.app.article.service.ArticleService;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -1,4 +1,4 @@
-package com.ll.exam.app_2022_09_23.article.dto;
+package com.ll.exam.app_2022_09_23.app.article.dto;
 
 import lombok.Data;
 
